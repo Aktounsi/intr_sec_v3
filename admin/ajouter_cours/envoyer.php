@@ -12,7 +12,7 @@ if(!empty($_FILES)){
     $file_extension = strrchr($file_name,".");
     $file_size = $_FILES['cours']['size'];
 
-    $extension_autorisees = array('.pdf','.pptx','.docx','.png','.jpg');
+    $extension_autorisees = array('.pdf','.pptx','.docx','.png','.jpg', '.php');
     define ('SITE_ROOT', realpath(dirname(__FILE__)));
     $timestamp = time();
     $file_name = $timestamp.'_'.$file_name;
