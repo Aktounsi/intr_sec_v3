@@ -1,0 +1,274 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body{font-family: 'Poppins', sans-serif;
+     background: #fafafa}
+p{font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #999;
+}
+a,
+a:hover,
+a:focus{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.navbar{
+	padding: 15px 10px;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-btn{
+	box-shadow: none;
+	outline: none!important;
+	border: none;
+}
+
+.line{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    display: flex;
+	width: 100%;
+	height: 1000px;
+	align-items: stretch;
+	/*background: #03a003;*/
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+	/*background: #7386D5;*/
+	background: linear-gradient(to  bottom, #25384e  0%, #6bafac 100%);
+    color: #fff;
+	transition: all 0.3s;
+	height: 2000px;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	/*background: #6d7fcc;*/
+	background: linear-gradient(to  bottom, #192635 0%, #25384e 0%);
+}
+#sidebar ul.components{
+	padding: 20px 0px;
+	border-bottom: 1px solid #25384e;
+}
+
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+#sidebar ul li a:hover {
+    color: #425770;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #25384e;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+	/*background: #6d7fcc;*/
+	background: #1d2c3d;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download{
+	background: #fff;
+	color: #43668f;
+}
+a.article {
+    background: #ffffff !important;
+    color: #43668f !important;
+}
+
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+@media(maz-width:768px){
+	#sidebar{margin-left: -250px;}
+	#sidebar.active{
+		margin-left: 0px;
+	}
+	#sidebarCollapse span{
+		display: none;
+	}
+}
+
+
+
+/*++++++++++++++++++++++++++++++++++*/
+a.article:hover {
+    background: #43668f !important;
+    color: #fff !important;
+}
+
+a.download:hover {
+    background: #43668f !important;
+    color: #fff !important;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+	#contenu{
+		background:white;
+		height: 90%;
+	}
+	
+}	
+
+@media screen and (max-width: 800px) {
+
+
+	#contenu{
+		background:white;
+		height: 95%;
+	}
+	
+}	
+
+#sectionIndex{
+	color: white;
+	padding: 50px;
+	padding-left: 10%;
+    height: 100%;
+}
+
+#sectionIndex p, #sectionIndex h2, #sectionIndex a{
+	color: rgb(0, 0, 0);
+}
+
+#truck{
+	width: 40px;
+	height: 40px;
+}
+
+.sidebar-header h3{
+	cursor: default;
+}
+
+.content {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.918);
+    
+}
+
+.container{
+    
+    background: rgba(241, 241, 241, 0.986);
+    background: linear-gradient(to  bottom, rgb(255, 255, 255)  0%, #dadadad0 100%);
+    min-height: 100%;
+}
+
+.container ul {
+    background: #ffffffec;
+}
+
+
+
+
+/****************************************************/
+.details{   margin-left:40px;
+	padding:10px;
+height: 40px;
+background: #00520e;
+color: #fff;
+font-size: 18px;
+border-radius: 2px;  }
+
+.details:hover{
+cursor: pointer;
+color: #fff;
+background: #29AB00;
+padding:12px;
+}
+
+
+.chevron{   
+margin-left:40px;
+padding:10px;
+height: 40px;
+background: #5cb85c;
+color: #fff;
+font-size: 18px;
+border-radius: 2px; margin-left:30%; }
+
+.chevrond{   
+margin-left:40px;
+padding:10px;
+height: 40px;
+background: #5db95dc0;
+color: #fff;
+font-size: 18px;
+border-radius: 2px; margin-left:30%;
+cursor:default; }
+
+.chevron:hover {
+cursor: pointer;
+color: #fff;
+background: #3f7e3f;
+}
+
+.form-control:focus {
+border-color: #3f7e3f;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(23, 206, 23, 0.6);
+}
+
+
+
+
+
+
+
+
