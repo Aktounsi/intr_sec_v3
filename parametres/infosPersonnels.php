@@ -2,10 +2,7 @@
 defined('_DEFVAR') or exit('Restricted Access');
 if(!isset($verified)) require('../DBconnection.php');
 
-/*$requsername = $bdd->query('SELECT membre_ID from membres
-    where membres.pseudo=\'' . $_SESSION['username'] . '\' ');*/
-    /*$requsername = $bdd->query('SELECT membre_ID from membres
-    where membres.pseudo=\'a\' OR type_membre = 1 ');*/
+
     if(isset($_COOKIE['username'])) {
         $requsername = $bdd->query('SELECT membre_ID from membres
         where membres.pseudo=\'' . $_COOKIE['username'] . '\' '); }elseif(isset($_SESSION['username'])){
